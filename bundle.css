@@ -16,6 +16,10 @@ body.wolff-body .links h2 {
     text-align: center;
 }
 
+body.wolff-body .links h2 {
+    margin-bottom: 1rem;
+}
+
 @media only screen and (min-width: 1200px) {
     .about h1 {
         text-align: inherit;
@@ -25,17 +29,18 @@ body.wolff-body .links h2 {
 .bio {
     display: flex;
     flex-direction: column;
+    padding-left: 1rem;
 }
 
 .bio li {
     margin-right: 2rem;
     list-style: none;
-    padding-left: 1rem;
 }
 
 body.wolff-body {
     font-family: Verdana, Geneva, sans-serif;
     max-width: 960px;
+    padding: 2rem 1rem;
 }
 
 body.wolff-body h2,
@@ -79,15 +84,20 @@ body.wolff-body figcaption {
     }
 }
 
-.corporate-speak p {
-    line-height: 1.8rem;
-    margin-top: 1rem;
-    padding: 0 1rem;
-}
-
 @media only screen and (min-width: 1200px) {
     body.wolff-body .description h2 {
         font-weight: bold;
+    }
+}
+
+.corporate-speak p {
+    line-height: 1.8rem;
+    margin-top: 1rem;
+}
+
+@media only screen and (min-width: 1200px) {
+    .corporate-speak p {
+        padding: 0 1rem;
     }
 }
 
