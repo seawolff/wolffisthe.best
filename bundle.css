@@ -10,8 +10,8 @@
     margin: 3rem 0 2rem 0;
 }
 
-.about h1,
-.links h2 {
+body.wolff-body .about h1,
+body.wolff-body .links h2 {
     font-weight: bold;
     text-align: center;
 }
@@ -30,11 +30,22 @@
 .bio li {
     margin-right: 2rem;
     list-style: none;
+    padding-left: 1rem;
 }
 
 body.wolff-body {
     font-family: Verdana, Geneva, sans-serif;
     max-width: 960px;
+}
+
+body.wolff-body h2,
+body.wolff-body h3 {
+    font-size: 1rem;
+    border-bottom: none;
+}
+
+body.wolff-body h2 {
+    font-weight: normal;
 }
 
 body.wolff-body figure {
@@ -71,6 +82,13 @@ body.wolff-body figcaption {
 .corporate-speak p {
     line-height: 1.8rem;
     margin-top: 1rem;
+    padding: 0 1rem;
+}
+
+@media only screen and (min-width: 1200px) {
+    body.wolff-body .description h2 {
+        font-weight: bold;
+    }
 }
 
 footer {
@@ -79,12 +97,6 @@ footer {
     margin-top: 1rem;
     z-index: 10;
     text-align: center;
-}
-
-body.wolff-body h2,
-body.wolff-body h3 {
-    font-size: 1rem;
-    border-bottom: none;
 }
 
 header.wolff-header {
@@ -138,11 +150,13 @@ nav a:hover {
     color: #000;
 }
 
-.skills {
-    height: 200px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+@media only screen and (min-width: 1200px) {
+    .skills {
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
 }
 
 /* dark mode */
