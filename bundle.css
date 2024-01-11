@@ -7,22 +7,19 @@
 
 .about,
 .links {
-    margin-top: 3rem;
+    margin: 3rem 0 2rem 0;
 }
 
-.about p,
-.links p {
+.about h1,
+.links h2 {
     font-weight: bold;
     text-align: center;
 }
 
 @media only screen and (min-width: 1200px) {
-
-    .about p,
-    .links p {
+    .about h1 {
         text-align: inherit;
     }
-
 }
 
 .bio {
@@ -35,41 +32,45 @@
     list-style: none;
 }
 
-body.Wolff--body {
+body.wolff-body {
     font-family: Verdana, Geneva, sans-serif;
-    max-width: inherit;
-    --brand
+    max-width: 960px;
 }
 
-body.Wolff--body figure {
+body.wolff-body figure {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-body.Wolff--body figure img {
+body.wolff-body figure img {
     max-width: 300px;
 }
 
 @media only screen and (min-width: 1200px) {
-    body.Wolff--body figure {
+    body.wolff-body figure {
         flex-direction: row;
         align-items: flex-start;
         margin-bottom: 0;
     }
 }
 
-body.Wolff--body figcaption {
+body.wolff-body figcaption {
     font-style: italic;
 }
 
 @media only screen and (min-width: 1200px) {
-    body.Wolff--body figcaption {
+    body.wolff-body figcaption {
         margin-left: 4rem;
         display: flex;
         align-self: center;
         font-size: 1.2rem;
     }
+}
+
+.corporate-speak p {
+    line-height: 1.8rem;
+    margin-top: 1rem;
 }
 
 footer {
@@ -80,7 +81,13 @@ footer {
     text-align: center;
 }
 
-header.Wolff--header {
+body.wolff-body h2,
+body.wolff-body h3 {
+    font-size: 1rem;
+    border-bottom: none;
+}
+
+header.wolff-header {
     background: #000000;
     color: #faf6f0;
     display: flex;
@@ -114,31 +121,47 @@ main {
     box-shadow: var(--shadow-2);
 }
 
+.my-skills {
+    margin-top: 2rem;
+}
+
 nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 nav a {
-    color: #ee7f04
+    color: #ee7f04;
 }
 
 nav a:hover {
-    color: #000
+    color: #000;
+}
+
+.skills {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 /* dark mode */
 @media (prefers-color-scheme: dark) {
-    body.Wolff--body {
+    body.wolff-body {
         background: #343a40;
         color: #000;
+    }
+
+    body.wolff-body h2,
+    body.wolff-body h3 {
+        color: black;
     }
 
     footer {
         color: #fff;
     }
 
-    header.Wolff--header {
-        background: #212529
+    header.wolff-header {
+        background: #212529;
     }
 }
