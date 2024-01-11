@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="(Chris) Wolff - Award Winning Web Engineer / Fun Guy"
+        />
+        <title></title>
+        <link rel="stylesheet" href="/bundle.css" />
+        <link rel="stylesheet" href="https://fonts.xz.style/serve/inter.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css"
+        />
+    </head>
+    <body class="Wolff--body">
+        <header class="Wolff--header">
+            <h1>{{title | default: "Wolff"}}</h1>
+        </header>
+        <main><div class="container">{{ content }}</div></main>
+        <footer class="sticky">
+            <small>© 2024 Chris Wolff. All Rights Reserved.</small>
+        </footer>
+    </body>
+</html>
