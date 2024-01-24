@@ -2,6 +2,16 @@
 layout: layout.html
 ---
 
-{% for article in collections.article %}
-<h2><a href="{{article.url}}">{{article.data.title}}</a></h2>
-{% endfor %}
+<div class="article-header">
+    <h1>Articles</h1>
+    <a class="rss" href="/articles.xml">RSS</a>
+</div>
+<div class="article-list">
+    <ol>
+        {% for post in collections.post %}
+        <li>
+            <h2><a href="{{post.url}}">{{post.data.title}}</a></h2>
+        </li>
+        {% endfor %}
+    </ol>
+</div>

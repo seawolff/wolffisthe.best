@@ -69,4 +69,17 @@ layout: layout.html
             <li>Usability and user experience</li>
         </ul>
     </div>
+    <div class="post-list">
+        <h3>Here are some things I've been writing about <a href="/articles.xml">
+                <icon>✍️</icon>
+            </a>
+        </h3>
+        <ol>
+            {% for post in collections.post %}
+            <li>
+                <h2><a class="post-item" href="{{post.url}}">{{post.data.title}}</a></h2>
+            </li>
+            {% endfor %}
+        </ol>
+    </div>
 </div>
