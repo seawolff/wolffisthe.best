@@ -290,6 +290,7 @@ nav a:hover {
         color: #000;
     }
 
+    body.wolff-body h1,
     body.wolff-body h2,
     body.wolff-body h3 {
         color: black;
