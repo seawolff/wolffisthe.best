@@ -5,23 +5,25 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
             name="description"
-            content="(Chris) Wolff - Award Winning Web Engineer / Fun Guy"
+            content="Chris Wolff — Senior Software Engineer"
         />
-        <title>💻✍️ (Chris) Wolff - Award Winning Web Engineer / Fun Guy</title>
+        <title>Chris Wolff — Senior Software Engineer</title>
         <link rel="stylesheet" href="/bundle.css" />
         <link rel="stylesheet" href="https://fonts.xz.style/serve/inter.css" />
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css"
-        />
     </head>
-    <body class="wolff-body">
-        <header class="wolff-header">
-            <h1><a href="/">Wolff</a></h1>
+    <body>
+        <header class="site-header">
+            <a href="/" class="site-header__wordmark">Wolff</a>
+            <nav class="site-nav">
+                <a href="/articles">Writing</a>
+                <a href="https://github.com/seawolff">GitHub</a>
+                <a rel="me" href="https://front-end.social/@seawolff">Mastodon</a>
+                <a href="https://linkedin.com/in/thewolff">LinkedIn</a>
+            </nav>
         </header>
-        <main><div class="container">{{ content }}</div></main>
-        <footer class="sticky">
-            <small>© 2024 Chris Wolff. All Rights Reserved.</small>
+        <main class="site-main">{{ content }}</main>
+        <footer class="site-footer">
+            <small>&copy; 2026 Chris Wolff &middot; <a href="mailto:me@wolffisthe.best">me@wolffisthe.best</a></small>
         </footer>
     </body>
 </html>

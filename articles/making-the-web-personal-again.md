@@ -4,8 +4,12 @@ tags: post
 date: Last Modified
 ---
 
-<h1 class="post-title">{{ title }}</h1>
-<p class="published">{{ page.date | postDate }}</p>
+<div class="post-header">
+<h1>{{ title }}</h1>
+<p class="post-date">{{ page.date | postDate }}</p>
+</div>
+
+<div class="post-content">
 
 Oh hello, world. It’s me Wolff. Long time (code) writer for the web but seldom a contributor of my own words and thoughts. A little about me, I am a web engineer who has been working on websites and apps for the past 20 years. Some notable projects I have been fortunate enough to write code for have been the Obama 2012 American presidential reelection campaign, helping to build the world’s visual language at Noun Project, and helping to feature beautifully designed content at Apartment Therapy Media. The projects and teams I’ve worked with have helped me grow as a software engineer and developer but yet my contribution to them is not mine to own. So now it is time to change that.
 
@@ -27,12 +31,13 @@ So this is my own acknowledgment of my need to return to my roots. To return to 
 
 So here I am. Fourteen years into my professional web development career feeling ever more ready to reconnect with myself and what motivates me as a writer of code and works. I’m thankful for the last decade+ of professional code writing but I acknowledge I have been missing my own magic sauce that makes the web personal to me. So here I am. Just a human in front of a computer rediscovering what it means to be a contributor, a writer for and of the web. Hello World. Nice to meet you again.
 
+</div>
 
 <div class="additional-resources">
-    <strong><icon>🤔‍</icon> Some additional resources that got my noodle flowing </strong>
+    <strong>Some additional resources that got my noodle flowing:</strong>
     <ul>
         <li>
-            <a href="https://chriscoyier.net/2024/01/22/where-have-all-the-websites-gone"> Where Have All The Websites Gone</a>
+            <a href="https://chriscoyier.net/2024/01/22/where-have-all-the-websites-gone">Where Have All The Websites Gone</a> — Chris Coyier
         </li>
     </ul>
 </div>

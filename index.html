@@ -2,84 +2,94 @@
 layout: layout.html
 ---
 
-<div class="description">
-    <figure>
-        <img src="/img/headshot.png" alt="A Headshot of Chris Wolff the author of this webpage." />
-        <figcaption>
-            <h2>Hi I'm Chris Wolff, but you can call me "Wolff"!</h2>
-        </figcaption>
-    </figure>
-    <div class="links">
-        <h2>Places you can find me:</h2>
-        <nav>
-            <!-- <a href="/articles" class="nav-item nav-item--articles">Articles</a> -->
-            <a rel="me" href="https://front-end.social/@seawolff" class="nav-item nav-item--mastodon">Mastodon</a>
-            <a href="https://github.com/seawolff" class="nav-item nav-item--github">Github</a>
-            <a href="https://linkedin.com/in/thewolff" class="nav-item nav-item--linkedin">Linkedin</a>
-        </nav>
-    </div>
-    <div class="about">
-        <h3>Some fun facts about me:</h3>
-        <ul class="bio">
-            <li>
-                <icon>👨‍💻</icon> Award Winning Web Developer
-            </li>
-            <li>
-                <icon>🧘‍♂️</icon> Certified 200-YTT Yoga Instructor
-            </li>
-            <li>
-                <icon>🥖</icon> Baker
-            </li>
-            <li>
-                <icon>🍄</icon> Forager
-            </li>
-            <li>
-                <icon>🏜️</icon> Enjoyer
-            </li>
-            <li>
-                <icon>🐶🐱🦕</icon> Lover
-            </li>
-        </ul>
-    </div>
-    <div class="corporate-speak">
-        <h3>Here's some corporate speak about me:</strong></h3>
-        <p>
-            Award-winning front-end developer with 14 years of professional experience
-            creating, optimizing, and rapidly deploying outstanding websites.
-            Accomplished in tailoring experiences and approaches to distinct
-            verticals, and building systematic approaches to development to
-            accelerate delivery. Proficient in JavaScript, React with experience
-            with Redux client stores, CSS and many, many transpilers.</p>
+<section class="hero">
+    <img class="hero__photo" src="/img/headshot.png" alt="Chris Wolff" />
+    <div>
+        <h1 class="hero__name">Chris Wolff</h1>
+        <p class="hero__title">Senior Software Engineer</p>
+        <p class="hero__bio">
+            Challenge-driven developer with 15 years of experience across politics, design,
+            publishing, and 3D visualization. I build for the web using JavaScript, TypeScript,
+            React, BabylonJS, and modern CSS.
+        </p>
+        <p class="hero__contact">
+            Tucson, AZ &middot; <a href="mailto:me@wolffisthe.best">me@wolffisthe.best</a>
         </p>
     </div>
-    <div class="my-skills">
-        <h3>Skills:</h3>
-        <ul class="skills">
-            <li>CSS (Less, Sass/SCSS - BEM)</li>
-            <li>HTML (A lost art)</li>
-            <li>Javascript (React, NextJS, Redux, Node/Express)</li>
-            <li>Python (Django)</li>
-            <li>UX/UI development and optimization</li>
-            <li>Responsive web design</li>
-            <li>Website accessibility and page speed</li>
-            <li>Web standards and guidelines</li>
-            <li>A/B testing</li>
-            <li>Agile methodology and ceremonies</li>
-            <li>Search Engine Optimization (SEO)</li>
-            <li>Usability and user experience</li>
-        </ul>
+</section>
+
+<section class="section">
+    <p class="section-label">Experience</p>
+    <div class="experience-list">
+        <div class="experience-item">
+            <p class="experience-item__company">3D Cloud</p>
+            <p class="experience-item__meta">Senior Software Engineer &middot; Remote &middot; 2024&ndash;2026</p>
+            <p class="experience-item__desc">
+                Built BabylonJS features and UI for a white label 3D room planner platform used
+                across kitchen, bath, and decking configurators. Led ADA initiative for WCAG AA
+                compliance. Developed AI-assisted tooling for automated smoke testing.
+            </p>
+        </div>
+        <div class="experience-item">
+            <p class="experience-item__company">Apartment Therapy Media</p>
+            <p class="experience-item__meta">Senior Software Engineer &middot; Remote &middot; 2018&ndash;2023</p>
+            <p class="experience-item__desc">
+                Built modern publishing infrastructure including post layouts, user features,
+                editorial dashboards, and SEO using React, JavaScript, Varnish caching, and Python.
+            </p>
+        </div>
+        <div class="experience-item">
+            <p class="experience-item__company">Noun Project</p>
+            <p class="experience-item__meta">Senior Software Engineer &middot; Chicago, IL / Los Angeles, CA &middot; 2013&ndash;2018</p>
+            <p class="experience-item__desc">
+                Built and deployed modern infrastructure, moving client-side code toward a modular,
+                component-driven architecture. Oversaw all client-side development including
+                Adobe's web-powered icon plugin.
+            </p>
+        </div>
+        <div class="experience-item">
+            <p class="experience-item__company">Obama For America</p>
+            <p class="experience-item__meta">Web Developer &middot; Chicago, IL &middot; 2011&ndash;2012</p>
+            <p class="experience-item__desc">
+                Second developer on the digital team for barackobama.com. Built a design system
+                powering rapid-response microsites, infographics, and donation pages.
+            </p>
+        </div>
     </div>
-    <div class="post-list">
-        <h3>Here are some things I've been writing about <a href="/articles.xml">
-                <icon>✍️</icon>
-            </a>
-        </h3>
-        <ol>
-            {% for post in collections.post %}
-            <li>
-                <h2><a class="post-item" href="{{post.url}}">{{post.data.title}}</a></h2>
-            </li>
-            {% endfor %}
-        </ol>
+</section>
+
+<section class="section">
+    <p class="section-label">Skills</p>
+    <ul class="skills-list">
+        <li class="skill-tag">JavaScript</li>
+        <li class="skill-tag">TypeScript</li>
+        <li class="skill-tag">CSS / Sass / BEM</li>
+        <li class="skill-tag">React &amp; Redux</li>
+        <li class="skill-tag">BabylonJS</li>
+        <li class="skill-tag">WebGL</li>
+        <li class="skill-tag">Web Workers</li>
+        <li class="skill-tag">Python</li>
+        <li class="skill-tag">Node / Express</li>
+        <li class="skill-tag">SEO &amp; Accessibility</li>
+    </ul>
+</section>
+
+<section class="section">
+    <p class="section-label">Awards</p>
+    <ul class="awards-list">
+        <li class="award-item"><strong>Webby Award</strong> &mdash; BarackObama.com</li>
+        <li class="award-item"><strong>Webby Award</strong> &mdash; ApartmentTherapy.com</li>
+    </ul>
+</section>
+
+<section class="section">
+    <p class="section-label">Writing</p>
+    <div class="writing-list">
+        {% for post in collections.post | reverse %}
+        <div class="writing-item">
+            <span class="writing-item__date">{{ post.date | postDate }}</span>
+            <a class="writing-item__title" href="{{ post.url }}">{{ post.data.title }}</a>
+        </div>
+        {% endfor %}
     </div>
-</div>
+</section>
