@@ -85,7 +85,7 @@ layout: layout.html
 <section class="section">
     <p class="section-label">Writing</p>
     <div class="writing-list">
-        {% for post in collections.post | reverse %}
+        {% for post in collections.postsByDate %}
         <div class="writing-item">
             <span class="writing-item__date">{{ post.date | postDate }}</span>
             <a class="writing-item__title" href="{{ post.url }}">{{ post.data.title }}</a>

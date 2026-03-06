@@ -396,6 +396,194 @@ img {
   color: var(--accent);
 }
 
+/* BabylonJS demo container */
+.demo-container {
+  margin: 2.5rem 0;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #061824;
+}
+
+.demo-container canvas {
+  width: 100%;
+  height: 340px;
+  display: block;
+  touch-action: none;
+}
+
+.demo-caption {
+  text-align: center;
+  font-size: 0.75rem;
+  color: #4f70a0;
+  padding: 0.6rem;
+  background: #061824;
+  margin: 0;
+}
+
+/* Syntax highlighting (Prism) */
+pre[class*="language-"] {
+  background: var(--bg-subtle);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1.25rem 1.5rem;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+  font-size: 0.82rem;
+  line-height: 1.65;
+}
+
+code[class*="language-"] {
+  font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+  background: none;
+  color: var(--text);
+}
+
+:not(pre) > code {
+  font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+  font-size: 0.85em;
+  background: var(--bg-subtle);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  padding: 0.1em 0.35em;
+  color: var(--text);
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata { color: var(--text-muted); font-style: italic; }
+
+.token.keyword,
+.token.tag .token.tag { color: #c792ea; }
+
+.token.string,
+.token.attr-value { color: #a5d6a7; }
+
+.token.number,
+.token.boolean { color: #f78c6c; }
+
+.token.function { color: #82aaff; }
+
+.token.class-name,
+.token.builtin { color: var(--accent); }
+
+.token.operator,
+.token.punctuation { color: var(--text-muted); }
+
+.token.property,
+.token.attr-name { color: #80cbc4; }
+
+/* Logger demo widget */
+.logger-demo {
+  margin: 2.5rem 0;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  font-size: 0.85rem;
+}
+
+.logger-demo__section {
+  padding: 0.9rem 1.25rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.logger-demo__section:last-child { border-bottom: none; }
+
+.logger-demo__label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 0.6rem;
+}
+
+.logger-demo__btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.logger-demo__btn {
+  font-family: inherit;
+  font-size: 0.78rem;
+  padding: 0.3rem 0.75rem;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: background 0.1s, color 0.1s;
+}
+
+.logger-demo__btn:hover { background: var(--bg-subtle); color: var(--text); }
+
+.logger-demo__btn--active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+  font-weight: 600;
+}
+
+.logger-demo__btn--debug { --btn-color: #82aaff; }
+.logger-demo__btn--info  { --btn-color: #a5d6a7; }
+.logger-demo__btn--warn  { --btn-color: #f0c040; }
+.logger-demo__btn--error { --btn-color: #f07070; }
+
+.logger-demo__fire-btn {
+  background: var(--bg-subtle);
+  border-color: var(--border);
+  color: var(--btn-color, var(--text));
+}
+
+.logger-demo__fire-btn:hover {
+  background: var(--btn-color, var(--accent));
+  color: #fff;
+  border-color: var(--btn-color, var(--accent));
+}
+
+.logger-demo__queue-bar-wrap {
+  background: var(--border);
+  border-radius: 3px;
+  height: 8px;
+  margin-top: 0.5rem;
+  overflow: hidden;
+}
+
+.logger-demo__queue-bar {
+  height: 100%;
+  background: var(--accent);
+  border-radius: 3px;
+  width: 0%;
+  transition: width 0.2s;
+}
+
+.logger-demo__queue-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 0.35rem;
+}
+
+.logger-demo__log-list {
+  max-height: 160px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.logger-demo__log-entry {
+  font-size: 0.78rem;
+  font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+  color: var(--text-muted);
+  padding: 0.2rem 0;
+}
+
+.logger-demo__log-entry--filtered { opacity: 0.45; font-style: italic; }
+.logger-demo__log-entry--sent { color: #a5d6a7; }
+
 /* Mobile */
 @media (max-width: 600px) {
   .site-header {

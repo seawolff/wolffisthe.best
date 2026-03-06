@@ -7,7 +7,7 @@ layout: layout.html
     <a class="rss-link" href="/articles.xml">RSS</a>
 </div>
 <div class="writing-list">
-    {% for post in collections.post | reverse %}
+    {% for post in collections.postsByDate %}
     <div class="writing-item">
         <span class="writing-item__date">{{ post.date | postDate }}</span>
         <a class="writing-item__title" href="{{ post.url }}">{{ post.data.title }}</a>

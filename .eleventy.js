@@ -1,4 +1,5 @@
 const pluginRss = require("@11ty/eleventy-plugin-rss");
+const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const { DateTime } = require("luxon");
 
 module.exports = function (eleventyConfig) {
@@ -9,6 +10,14 @@ module.exports = function (eleventyConfig) {
 
   // RSS config
   eleventyConfig.addPlugin(pluginRss);
+
+  // Syntax highlighting
+  eleventyConfig.addPlugin(syntaxHighlight);
+
+  // Posts sorted newest first
+  eleventyConfig.addCollection("postsByDate", function (collectionApi) {
+    return collectionApi.getFilteredByTag("post").sort((a, b) => b.date - a.date);
+  });
 
   // Post Date
   eleventyConfig.addFilter("postDate", (dateObj) => {

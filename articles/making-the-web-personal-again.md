@@ -1,7 +1,7 @@
 ---
 title: Making The Web Personal Again
 tags: post
-date: Last Modified
+date: 2024-01-24
 ---
 
 <div class="post-header">
